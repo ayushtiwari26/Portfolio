@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Dancing+Script:wght@500&family=Playfair+Display&family=Roboto:wght@300&display=swap');
+
+.Educations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* height: 10rem; */
+    /* border: 1px solid red; */
+    margin-top: -10%;
+
+}
+.mypersonal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: 20%;
+}
+.mypersonal div p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Montserrat";
+    color: #FD4955;
+
+}
+.myeducation div p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Montserrat";
+    color: #FD4955;
+
+
+}
+.myeducation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    width: 50%;
+    padding-right: 10%;
+}
+.mydob:hover p{
+    font-size:25px;
+    transition: all 500ms;
+    color: black;
+}
+.mydob:hover .IconStyle{
+    color: #FD4955;
+    /* filter: drop-shadow(0 0 0.85rem gray); */
+}
+.myaddress:hover p{
+    font-size:25px;
+    transition: all 500ms;
+    color: black;
+}
+.myaddress:hover .IconStyle{
+    color: #FD4955;
+}
+.myschool:hover p{
+    font-size:22px;
+    transition: all 500ms;
+    color: black;
+}
+.myschool:hover .IconStyle{
+    color: #FD4955;
+}
+.mycollege:hover p{
+    font-size:22px;
+    transition: all 500ms;
+    color: black;
+}
+.mycollege:hover .IconStyle{
+    color: #FD4955;
+}
+.IconStyle svg{
+    color: black;
+
+}
+/* .IconStyle:hover svg{
+    color: hotpink;
+
+} */
+.pi-right{
+    width: 100%;
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+
+}
+.LeftSkill{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Exp{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+  
+}
+.firstCol{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.Top{
+    margin-top: 5%;
+}
+.companyList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+
+
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+.LeftDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+}
+.buttons div{
+    margin-right: 1rem;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills{
+    margin-bottom: -0.2rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size:3rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: blueviolet;
+    font-family: 'Roboto', sans-serif;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    width: 4rem;
+}
+ 
+.icon div{
+    align-items: center;
+    font-family: 'Montserrat', serif;
+    margin-top: 0.3rem;
+    font-weight: 300;
+    font-size: 23px;
+    width: 120px;
+    margin-left: 20px;
+    /* color:white; */
+}
+.comapny1 p{
+    align-items: center;
+    font-family: 'Montserrat', serif;
+    margin-top: 0.3rem;
+    font-weight: 300;
+    font-size: 23px;
+    margin-left: 20px;
+    /* color:white; */
+}

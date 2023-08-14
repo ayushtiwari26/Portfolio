@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Dancing+Script:wght@500&family=Playfair+Display&family=Roboto:wght@300&display=swap');
+.projectBack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.phead{
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: blueviolet;
+    font-family: 'Roboto', sans-serif;
+}
+.paraDiv{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 3%;
+    text-align: justify;
+    font-size: 1.7rem;
+    font-weight: 300;
+    font-family: "Montserrat";
+    line-height: 40px;
+    color: #61677b;
+
+}
+.scroll-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.horizontal-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    width: 95%;
+    margin-top: 20px;
+    padding: 10px;
+    gap: 40px;
+    margin-bottom: 5%;
+  }
+  .horizontal-scroll-container::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .horizontal-scroll-container img {
+    width: 50%;
+    /* height: 200px; */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  .scroll-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .scroll-buttons button{
+    display: flex;
+    background:#fff ;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 60%;
+    margin-top: -30px;
+    font-weight: 800;
+  }
+  .scroll-buttons button:hover{
+    display: flex;
+    background:  #FD4955;
+    cursor: pointer;
+  }
+
+  

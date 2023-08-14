@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Dancing+Script:wght@500&family=Roboto:wght@300&display=swap');
+
+.contactBack{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centreDiv{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+#contact{
+    font-size: 40px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 20px 0px;
+}
+.inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 0px 20px;
+}
+.inputs input{
+    background-color: white;
+    border: none;
+    outline:none ;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+.inputs input::placeholder{
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    /* font-family: 'Cormorant Garamond', serif; */
+    /* letter-spacing: 1.5px; */
+}
+.Subject{
+   
+    padding: 20px;
+}
+.Subject input{
+    background-color: white;
+    border: none;
+    outline:none ;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    width: 76%;
+}
+.Subject input::placeholder{
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+.message{
+    padding: 20px;
+    
+}
+.message input{
+    background-color: white;
+    border: none;
+    outline:none ;
+    padding: 30px 30px 150px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    width: 76%;
+    
+}
+.message input::placeholder{
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+.butt{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+.butt button{
+    background-color:#FD4955;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 2px;
+
+}
