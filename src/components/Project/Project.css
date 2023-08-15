@@ -73,5 +73,19 @@
     background:  #FD4955;
     cursor: pointer;
   }
-
+@media (min-width: 350px) and (max-width:900px){
+  .projectBack{
+    margin-top: 60px;
+  }
+  .paraDiv{
+    width: 90%;
+    font-size: 1.5rem;
+  }
+  .phead{
+    font-size: 2.4rem;
+}
+.scroll-buttons{
+  display: none;
+}
+}
   

@@ -43,7 +43,6 @@
     /* letter-spacing: 1.5px; */
 }
 .Subject{
-   
     padding: 20px;
 }
 .Subject input{
@@ -102,4 +101,17 @@
     font-family: 'Cormorant Garamond', serif;
     letter-spacing: 2px;
 
+}
+@media (min-width:350px) and (max-width: 1030px){
+    .inputs{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+        padding: 20px;
+        margin: 0px 0px;
+        gap: 20px;
+    }
+    .inputs input{
+        width: 76%;
+    }
 }

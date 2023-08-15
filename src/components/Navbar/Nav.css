@@ -17,7 +17,7 @@
 }
 .NavImg{
     position: absolute;
-    width: 100px;
+    width: 60px;
     height: 50px;
     left: 6%;
     top: 5%;
@@ -63,3 +63,85 @@
     color: rgb(96, 94, 228);
     cursor: pointer;
 }
+.NavMenuIcon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .NavMenuIcon.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+  
+  .NavMenuIcon.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .NavMenuIcon.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+  
+  .OverlayNavList {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: none;
+  }
+  
+  .OverlayNavList li {
+    padding: 15px 0;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+
+  }
+  .NavMenuIcon  {
+    display: none;
+
+  }
+@media (max-width: 900px) {
+    .Navleftdiv {
+      display: none; /* Hide the regular navigation links */
+    }
+    
+    .NavMenuIcon {
+      display: block; /* Display the hamburger menu icon */
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      cursor: pointer;
+    }
+    .Navlist{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        list-style-type:none;
+        justify-content: space-evenly;
+        color:#4e4e54; 
+        /* background-color: #4e4e54; */
+        margin-top: 15px;
+        font-family: Phantomsans, sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    
+    }
+    .NavOverlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none; /* Initially hidden */
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+    }
+    
+    .NavOverlay.active {
+      display: flex; /* Show the overlay when active */
+    }
+  }
