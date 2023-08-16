@@ -101,7 +101,7 @@
     display: none;
 
   }
-@media (max-width: 900px) {
+@media (min-width: 350px) and (max-width: 900px) {
     .Navleftdiv {
       display: none; /* Hide the regular navigation links */
     }
@@ -110,7 +110,7 @@
       display: block; /* Display the hamburger menu icon */
       position: absolute;
       top: 15px;
-      right: 15px;
+      right: 20px;
       cursor: pointer;
     }
     .Navlist{
