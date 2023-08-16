@@ -181,9 +181,38 @@
     margin-left: 20px;
     /* color:white; */
 }
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply fadeIn animation to elements with the ".fadeIn" class */
+  .fadeIn {
+    animation: fadeIn 1s ease-in-out;
+  }
 @media (min-width: 350px) and (max-width:700px){
     .companyList {
-        padding: 0px 10px;
+        padding: 0px 20px;
+    }
+    .comapny1 img{
+        width: 60px !important;
+        height: 80px !important;
+    }
+    .firstCol{
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 20px;
+        margin-left: -10px;
+        
+    }
+    #mota img{
+        width: 250px !important;
     }
     .mypersonal{
         flex-direction: column;

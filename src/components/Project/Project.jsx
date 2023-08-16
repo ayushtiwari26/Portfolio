@@ -5,6 +5,7 @@ import image4 from "../../assests/Quonovate.png";
 import image3 from "../../assests/netflixclone.png";
 import image5 from "../../assests/dining.png";
 import image2 from "../../assests/evess.png"; // Import your images
+import { Link } from 'react-router-dom';
 
 const Project = () => {
   const scrollContainerRef = useRef(null);

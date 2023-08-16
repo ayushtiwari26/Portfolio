@@ -101,17 +101,20 @@
     display: none;
 
   }
-@media (min-width: 350px) and (max-width: 900px) {
+@media (max-width: 900px) {
     .Navleftdiv {
       display: none; /* Hide the regular navigation links */
     }
-    
+    .Navhead{
+      position: relative;
+    }
     .NavMenuIcon {
       display: block; /* Display the hamburger menu icon */
       position: absolute;
       top: 15px;
       right: 20px;
       cursor: pointer;
+
     }
     .Navlist{
         display: flex;

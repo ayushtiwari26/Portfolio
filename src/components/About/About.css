@@ -107,3 +107,35 @@
     
     }
 }
+.AboutBack.fadeIn {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .abutLink.slideInLeft {
+    animation: slideInLeft 1s ease-in-out;
+  }
+  
+  .aboutpara.slideInRight {
+    animation: slideInRight 1s ease-in-out;
+  }
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }

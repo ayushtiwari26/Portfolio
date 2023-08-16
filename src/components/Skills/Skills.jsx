@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Skills.css"
 import {FaBirthdayCake, FaSchool, FaUserGraduate } from 'react-icons/fa';
 import {MdLocationOn} from 'react-icons/md'
@@ -11,7 +11,27 @@ import EVE from "../../assests/EVE.png"
 import Infomatics from '../../assests/Infomatics.png'
 import Codepanda from "../../assests/Codepanda.png"
 import CodeClause from "../../assests/codeclause.png"
-const skills = () => {
+const Skills = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const section = document.querySelector('.pi-right');
+      if (section) {
+        const sectionTop = section.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (sectionTop < windowHeight * 0.75) {
+          setIsVisible(true);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <>
       <div className='Educations'>
@@ -38,7 +58,7 @@ const skills = () => {
 
         </div>
       </div>
-      <div className="pi-right" id="education">
+      <div className={`pi-right ${isVisible ? 'fadeIn' : ''}`} id="education">
         <div className="LeftSkill">
             <div className="skills center">Skills</div>
             <br /><br />
@@ -94,7 +114,7 @@ const skills = () => {
                   {/* <p>Eve HealthCare</p> */}
                 </div>
                 
-                <div className="comapny1">
+                <div className="comapny1" id='mota'>
                 <img src={Infomatics} width={300} height={70} />
                 {/* <p> Infomatics Technology</p> */}
                 </div>
@@ -102,7 +122,7 @@ const skills = () => {
               <div className="firstCol Top">
 
             
-              <div className="comapny1">
+              <div className="comapny1 mota" id='mota'>
                 <img src={Codepanda} width={300} height={70} />
                 {/* <p> Code Panda</p> */}
               </div>
@@ -121,4 +141,4 @@ const skills = () => {
   )
 }
 
-export default skills
+export default Skills
